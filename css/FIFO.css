@@ -1,0 +1,38 @@
+.list-one{
+	width: 30px;
+	height: 30px;
+	background-color: #6facd5;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 1px;
+}
+.showerea{
+	margin-top: 30px;
+}
+.showlistone{
+	float: left;
+	border-right: 5px solid white;
+	margin-top: 8px;
+	height: 133px;
+}
+.quit{
+	padding-left: 11px;
+	color: red;
+	font-weight: bold;
+}
+.result{
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.enter{
+	width:30px;
+	text-align: center;
+	font-weight: bold;
+}
+.array-area{
+	width: 100%;
+	word-break: break-all;
+	
+}

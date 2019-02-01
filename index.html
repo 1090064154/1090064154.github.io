@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>页面置换算法演绎</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery.js"></script> 
+    <script type="text/javascript" src="js/jquery.mobile.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+</head>
+<body>
+  <div data-role="page">
+	<div data-role="header">
+		<h1>页面置换算法演绎</h1>
+	</div>
+	<div data-role="content">
+	    <div data-theme="b" id="createdata" data-role="none">生成数组</div>
+	    <!--自定义数组长度-->
+	    <div data-role="fieldcontain">
+            <label for="points">数组长度:</label>
+           <input type="range" name="points" id="length" value="20" min="10" data-highlight="true"  max="100">
+        </div>
+        <!--自定义演绎速度-->
+        <div data-role="fieldcontain">
+            <label for="points">演绎速度:</label>
+           <input type="range" name="points" id="velocity" value="7" min="0" data-highlight="true"  max="10">
+        </div>
+         <div class="array-area">
+	      <strong> 随机数组:</strong>{<span></span>}
+	    </div>
+	    <fieldset data-role="fieldcontain">
+	      <select name="arithmetic" id="arithmetic">
+	         <option value="Optimal">最佳置换算法</option>
+	         <option value="FIFO">先进先出算法</option>
+	         <option value="LRU">最近最久未使用算法</option>
+	         <option value="Clock">Clock算法</option>
+	         <option value="ImprovedClock">改进型Clock算法</option>
+	      </select>
+	   </fieldset>
+	   <!--过程展示区-->
+	   <div class="showerea">
+
+	   </div>
+	   <br>
+	   <!--输出结果区-->
+	   <div class="result">
+
+       </div>
+    </div>
+     <div data-role="footer" data-position="fixed" class="footer" >
+        <h1>开始演绎</h1>
+    </div>
+  </div>
+</body>
+</html>
